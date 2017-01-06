@@ -1,0 +1,113 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+
+.barra-sup{
+	background-color: #2ecc71;
+	width: 100%;
+	height: 50px;
+	-webkit-box-shadow: 3px 13px 25px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 13px 25px -15px rgba(0,0,0,0.75);
+	box-shadow: 3px 13px 25px -15px rgba(0,0,0,0.75);
+	display: block;
+	position: fixed;
+	z-index: 1000;
+
+}
+	.derecha{
+		margin: 5px 30px;
+		float: right;
+
+
+	}
+	.izquierda{
+		
+		background: red;
+	
+	}
+
+	.titulo{
+		
+		float: left;
+
+	}
+	.titulo h2{
+		padding: 5px;
+		color: #FFF;
+	}
+
+		.titulo h2 a{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	.submit{
+		background-color: #2ecc71;
+		border: none;
+    	color: white;
+    	padding: 5px 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    font-size: 18px;
+	    font-weight: bold;
+	}
+	.submit:hover{
+		background-color: #4CAF50;
+	}
+	
+	.container{
+		padding-top: 80px;
+		padding-bottom: 30px;
+	}
+
+	.debajo{
+		z-index: 0;
+	}
+
+	.barra-historial{
+		background: #95a5a6;
+
+	}
+
+	.barra-historial h4{
+		color: #fff;
+		
+	}
+	
+	.color-green{
+		color: #27ae60;
+	}
+
+	fieldset div label input {
+		display: none;
+	}
+	
+	input:checked + span{
+	   color: #27ae60;
+	}
+
+	.color-lead-gt-24{ /*Color para span de lead mayor a 24 horas*/
+		color:#F22613;
+	}
+
+	.color-lead-sa{ /*Color para span de lead sin asesor*/
+		color:#96281B;
+	}
+
+	.color-lead-a{  /*Color para span de lead asignado*/
+		color:#19B5FE;
+	}
+
+	.color-lead-na{  /*Color para span de lead no asignado*/
+		color: #bdc3c7;
+	}
+
+
+@media screen and (max-width: 699px){
+	.titulo  h2{
+		padding:10px;
+		font-size: 170%;
+	}
+}

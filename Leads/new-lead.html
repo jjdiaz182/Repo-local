@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/leads.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <form action="guardar-lead.html">
+    <div class="barra-sup">
+      <div class="titulo"> 
+        <h2>
+         <a href="leads.html"> <span class="icon-arrow-left2"></span> Herso Leads </a>
+         </h2>
+      </div>
+      <div class="derecha">
+        <input type="submit" class="submit" name="guardar" value=" &#10004;">
+      </div> 
+  </div>
+    
+    <div class="container">
+
+
+       <fieldset class="form-group">
+            <legend>Tipo de vivienda (Requerido) </legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="vivienda" id="rdbsocial" value="social" required>
+                <span class="icon-home"></span>
+                Social
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="vivienda" id="rdbfemenino" value="residencial">
+                <span class="icon-office"></span>
+                Residencial
+              </label>
+            </div>
+        </fieldset>
+
+
+      <div class="form-group">
+          
+          <label for="proyecto">Proyecto</label>
+          
+            <input class="form-control" type="text" id="proyecto">
+
+        </div>
+
+
+        <div class="form-group">
+          
+          <label for="lider">Líder</label>
+            
+            <!-- Modificar el campo Value por el nombre del Lider-->
+            <input class="form-control" type="search" id="lider">
+        
+        </div>
+
+
+        <div class="form-group">
+          
+          <label for="asesor">Asesor</label>
+
+          <!-- Modificar el campo Value por el nombre del Asesor-->
+            <input class="form-control" type="text" id="asesor">
+
+        </div>
+
+        
+        <div class="form-group">
+            <label for="medio-contacto">Medio de contacto (Requerido)</label>
+          
+          <!-- obtener los medios de contacto y asignarlos en las etiquetas option-->
+              <select class="form-control" id="medio-contacto" required>
+              <option value="">Seleccione el medio de contacto</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+              <option value="3">4</option>
+              <option value="4">5</option>
+            </select>
+          </div>
+
+
+        
+          <fieldset class="form-group">
+            <legend>Género de la persona (Requerido)</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="genero" id="rdbmasculino" value="masculino" required>
+                <span class="icon-man"></span>
+                Masculino
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="genero" id="rdbfemenino" value="femenino">
+                <span class="icon-woman"></span>
+                Femenino
+              </label>
+            </div>
+            
+          </fieldset>
+
+
+        <div class="form-group">
+          <label for="nombres">Nombres (Requerido)</label>
+
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="text" id="nombres" required>
+
+        </div>
+        
+        
+        <div class="form-group">
+          <label for="apellido-paterno">Apellido Paterno</label>
+          
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="text"  id="apellido-paterno">
+
+        </div>
+
+        
+        <div class="form-group">
+          <label for="apellido-materno">Apellido Materno</label>
+          
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="text"  id="apellido-materno">
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="celular">Celular</label>
+          
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="tel" id="celular">
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="telefono-fijo">Telefono Fijo</label>
+          
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="tel" id="telefono-fijo">
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="email" id="email">
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="seguro-social">Numero de seguro Social</label>
+          
+          <!-- Obtener los datos del Lead y asignarlos en el campo Value-->
+            <input class="form-control" type="text"  id="seguro-social">
+
+        </div>
+        
+
+        <div class="form-group">
+            <label for="tipo-credito">Tipo de Crédito</label>
+            <select class="form-control" id="tipo-credito">
+              <option value="0">Selecciona un crédito </option>
+              <option value="1">1</option>
+              <option value="2">3</option>
+              <option value="3">4</option>
+              <option value="4">5</option>
+            </select>
+          </div>
+
+
+        <div class="form-group">
+          <label for="fecha-nacimiento">Fecha de nacimiento</label>
+
+            <input class="form-control" type="date" id="fecha-nacimiento">
+
+        </div>
+
+        <div class="form-group">
+          <label for="lugar-nacimiento">Lugar de nacimiento</label>
+
+            <input class="form-control" type="text"  id="lugar-nacimiento">
+
+        </div>
+
+
+        <div class="form-group">
+            <label for="comentarios">Comentarios Adicionales</label>
+            <textarea class="form-control" id="comentarios" rows="3"></textarea>
+          </div>
+        
+    </div>
+
+  </form>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.news-item { display:inline-block; vertical-align:top; width:300px;}  
+	</style>
+</head>
+<body>
+	<h2>Sort News</h2>
+	<select name="sort-news" id="sort-news">
+		<option value="All">All news</option>
+		<option value="Cat1">Category 1</option>
+		<option value="Cat2">Category 2</option>
+		<option value="Cat3">Category 3</option>
+	</select> 
+	<hr />
+	<section class="news-list">
+	  <article class="news-item" data-category="Cat1">
+		<div class="thumb">
+			<img alt="Our ALT text here" title="Our title here" src="http://placehold.it/150x150">
+		</div>
+		<div class="news-txt">
+			<h3><a href="">A 1 news title</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+		</div>
+	</article>
+	<article class="news-item" data-category="Cat2">
+		<div class="thumb">
+			<img alt="Our ALT text here" title="Our title here" src="http://placehold.it/150x150">
+		</div>
+		<div class="news-txt">
+			<h3><a href="">A 2 news title</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+		</div>
+	</article>
+	<article class="news-item" data-category="Cat3">
+		<div class="thumb">
+			<img alt="Our ALT text here" title="Our title here" src="http://placehold.it/150x150">
+		</div>
+		<div class="news-txt">
+			<h3><a href="">A 3 news title</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+		</div>
+	    </article>
+	  </section>
+	  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-12/jquery-2.0.3.min_1.js"></script>
+
+
+	  <script type="text/javascript">
+	  	
+	  	$('select#sort-news').change(function() {
+			var filter = $(this).val()
+			filterList(filter);
+		});
+
+		//News filter function
+		function filterList(value) {
+			var list = $(".news-list .news-item");
+			$(list).fadeOut("fast");
+			if (value == "All") {
+				$(".news-list").find("article").each(function (i) {
+					$(this).delay(200).slideDown("fast");
+				});
+			} else {
+				//Notice this *=" <- This means that if the data-category contains multiple options, it will find them
+				//Ex: data-category="Cat1, Cat2"
+				$(".news-list").find("article[data-category*=" + value + "]").each(function (i) {
+					$(this).delay(200).slideDown("fast");
+				});
+			}
+		}
+			  </script>
+</body>
+</html>

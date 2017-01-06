@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/leads.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <div class="barra-sup">
+      <div class="titulo"> 
+        <h2>Herso Leads</h2>
+      </div> 
+      <div class="derecha btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="icon-paragraph-justify"></span>
+        </button>
+          <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="new-lead.html"><span class="icon-plus"></span> Agregar Lead</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-sm"><span class="icon-filter"></span>  Filtro</a>
+          <a class="dropdown-item" href="index.html"><span class="icon-exit"></span> Salir</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+       
+       <div class="list-group">
+
+       <!---->
+         <div class="list-item">
+
+          <a href="toques.html?Lead=NUM_LEAD" class="list-group-item list-group-item-action" data-category="lead-gt-24">
+            <h5 class="list-group-item-heading">
+            <span class="color-lead-gt-24 icon-radio-checked2"></span> 
+              Jorge Toscano
+            </h5>
+            <p class="list-group-item-text">Lead > 24 Hrs.</p>
+          </a>
+
+          </div>
+
+          <div class="list-item">
+            <a href="toques.html?Lead=NUM_LEAD" class="list-group-item list-group-item-action" data-category="lead-no-asignado">
+              <h5 class="list-group-item-heading">
+                <span class="color-lead-sa icon-radio-checked2"></span> 
+                Miguel Cardenas Melchor</h5>
+              <p class="list-group-item-text">Sin Asesor.</p>
+            </a>
+
+          </div>
+
+          <div class="list-item">
+
+            <a href="toques.html?Lead=NUM_LEAD" class="list-group-item list-group-item-action" data-category="lead-asignado">
+              <h5 class="list-group-item-heading">
+              <span class="color-lead-a icon-radio-checked2"></span> 
+              Leticia Hernandez Martinez</h5>
+              <p class="list-group-item-text">Asignado.</p>
+            </a>
+
+          </div>
+
+          <div class="list-item">
+            <a href="toques.html?Lead=NUM_LEAD" class="list-group-item list-group-item-action" data-category="lead-no-asignado">
+              <h5 class="list-group-item-heading">
+              <span class="color-lead-na icon-radio-checked2"></span> 
+              Gildardo Fabiel Mariscal Velazquez</h5>
+              <p class="list-group-item-text">No asignado.</p>
+            </a>
+
+          </div>
+
+      </div>
+     
+      <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Filtro</h4>
+              </div>
+              <div class="modal-body">
+                   <div class="form-group">
+                      <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="genero" id="color-lead-a" value="lead-asignado">
+                          Asignado
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="genero" id="rdb-filtro-ld-asignado" value="lead-asignado">
+                          Contactados
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="genero" id="rdb-filtro-ld-asignado" value="lead-no-asignado">
+                          Sin Asignar
+                      </label>
+                    </div>
+                    
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="genero" id="rdb-filtro-ld-asignado" value="All">
+                          Sin Filtro
+                      </label>
+                    </div>
+
+                  </div>
+
+              </div>
+                <div class="modal-footer">       
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-filtros">Aplicar Filtros</button>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      
+     
+         $("input").click(function(){
+            var valor= $("input:checked").val();
+              filterList(valor);
+           
+          });
+
+
+
+          //News filter function
+          function filterList(value) {
+            var list = $(".list-group .list-group-item");
+            console.log(list);
+
+            $(list).fadeOut("fast");
+            
+            if (value == "All") {
+              $(".list-group").find("a").each(function (i) {
+                $(this).delay(200).slideDown("fast");
+              });
+            }
+            else {
+              
+              $(".list-group").find("a[data-category*=" + value + "]").each(function (i) {
+                $(this).delay(200).slideDown("fast");
+              });
+            }
+          }
+
+      </script>
+  </body>
+</html>
